@@ -1,0 +1,198 @@
+/* line 1, ../../compass/sass/lochenhost.scss */
+body {
+  background: url(http://wallpapercave.com/wp/VgVGZYS.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../../compass/sass/lochenhost.scss */
+.navigation {
+  display: inline-block;
+  font-family: 'Slim-Joe', sans-serif;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* line 20, ../../compass/sass/lochenhost.scss */
+.navigation .brand {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-left: 20px;
+}
+/* line 26, ../../compass/sass/lochenhost.scss */
+.navigation .brand:hover {
+  text-decoration: none;
+}
+/* line 30, ../../compass/sass/lochenhost.scss */
+.navigation .brand:before {
+  bottom: -10px;
+}
+/* line 35, ../../compass/sass/lochenhost.scss */
+.navigation .links {
+  display: inline;
+  float: right;
+  margin-right: 10%;
+  list-style-type: none;
+}
+/* line 41, ../../compass/sass/lochenhost.scss */
+.navigation .links li {
+  display: inline;
+  font-family: 'Verlag-Book', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 70px;
+  font-size: 13px;
+  margin-left: 25px;
+}
+/* line 53, ../../compass/sass/lochenhost.scss */
+.navigation a {
+  position: relative;
+  color: #DDD;
+  text-decoration: none;
+}
+/* line 58, ../../compass/sass/lochenhost.scss */
+.navigation a:hover {
+  color: white;
+  transition: color 0.3s;
+}
+/* line 63, ../../compass/sass/lochenhost.scss */
+.navigation a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 78, ../../compass/sass/lochenhost.scss */
+.navigation a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* line 86, ../../compass/sass/lochenhost.scss */
+.cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../img/pattern.png);
+  opacity: 0.4;
+  z-index: -2;
+}
+
+/* line 97, ../../compass/sass/lochenhost.scss */
+.top-wrapper {
+  font-size: 14px;
+  text-align: center;
+  margin-left: 0;
+  height: 100vh;
+  position: relative;
+}
+
+/* line 105, ../../compass/sass/lochenhost.scss */
+.triangle-left {
+  position: absolute;
+  bottom: -20px;
+  left: -50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50vw 15vh 50vw;
+  border-color: transparent transparent white transparent;
+}
+
+/* line 116, ../../compass/sass/lochenhost.scss */
+.triangle-right {
+  position: absolute;
+  bottom: -20px;
+  right: -50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50vw 15vh 50vw;
+  border-color: transparent transparent white transparent;
+}
+
+/* line 127, ../../compass/sass/lochenhost.scss */
+.top {
+  position: absolute;
+  width: 100%;
+  top: 48%;
+  transform: translateY(-50%);
+  line-height: 1.7;
+  z-index: 10;
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 137, ../../compass/sass/lochenhost.scss */
+.top h1 {
+  font-weight: 100;
+  font-family: 'Slim-Joe', sans-serif;
+  font-size: 80px;
+}
+/* line 143, ../../compass/sass/lochenhost.scss */
+.top p {
+  font-family: 'Verlag-Book', sans-serif;
+  font-size: 24px;
+}
+/* line 148, ../../compass/sass/lochenhost.scss */
+.top .separator-container {
+  text-align: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 152, ../../compass/sass/lochenhost.scss */
+  .top .separator-container .separator {
+    width: 20em;
+  }
+}
+/* line 157, ../../compass/sass/lochenhost.scss */
+.top .separator-container .separator {
+  color: white;
+  margin: 2em auto;
+  font-size: 120%;
+}
+/* line 162, ../../compass/sass/lochenhost.scss */
+.top .separator-container .separator i {
+  font-size: 150%;
+}
+/* line 168, ../../compass/sass/lochenhost.scss */
+.top .separator-container .line-separator:before {
+  float: left;
+  display: block;
+  width: 40%;
+  content: " ";
+  margin-top: 13px;
+  border: 1px solid white;
+}
+/* line 176, ../../compass/sass/lochenhost.scss */
+.top .separator-container .line-separator:after {
+  float: right;
+  display: block;
+  width: 40%;
+  content: " ";
+  margin-top: 14px;
+  border: 1px solid white;
+}
+
+/* line 188, ../../compass/sass/lochenhost.scss */
+.section {
+  min-height: 300px;
+  background-color: white;
+}
