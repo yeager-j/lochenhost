@@ -10,50 +10,59 @@ body {
 .navigation {
   display: inline-block;
   font-family: 'Slim-Joe', sans-serif;
-  height: 70px;
+  height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; }
-  /* line 20, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  z-index: 1000;
+  transition: all 0.3s;
+  line-height: 90px; }
+  /* line 21, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .navigation.navbar-solid {
+    background-color: white;
+    border-bottom: 1px solid #CCC;
+    line-height: 70px;
+    height: 70px; }
+    /* line 27, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    .navigation.navbar-solid a {
+      color: #333; }
+  /* line 32, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
   .navigation .brand {
     font-size: 24px;
     font-weight: bold;
-    line-height: 70px;
     margin-left: 20px; }
-    /* line 26, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 37, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation .brand:hover {
       text-decoration: none; }
-    /* line 30, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 41, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation .brand:before {
       bottom: -10px; }
-  /* line 35, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  /* line 46, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
   .navigation .links {
     display: inline;
     float: right;
     margin-right: 10%;
     list-style-type: none; }
-    /* line 41, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 52, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation .links li {
       display: inline;
       font-family: 'Verlag-Book', sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 600;
-      line-height: 70px;
       font-size: 13px;
       margin-left: 25px; }
-  /* line 53, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  /* line 63, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
   .navigation a {
     position: relative;
     color: #DDD;
     text-decoration: none; }
-    /* line 58, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 68, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation a:hover {
-      color: white;
+      color: #5C73A8;
       transition: color 0.3s; }
-    /* line 63, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 73, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation a:before {
       content: "";
       position: absolute;
@@ -61,19 +70,52 @@ body {
       height: 2px;
       bottom: -5px;
       left: 0;
-      background-color: white;
+      background-color: #5C73A8;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.3s ease-in-out 0s; }
-    /* line 78, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    /* line 88, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
     .navigation a:hover:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
 
-/* line 86, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+/* line 96, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+.separator-container {
+  text-align: center;
+  position: relative; }
+  @media (min-width: 768px) {
+    /* line 100, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    .separator-container .separator {
+      width: 20em; } }
+  /* line 104, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .separator-container .separator {
+    color: black;
+    margin: 2em auto;
+    font-size: 120%; }
+    /* line 108, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    .separator-container .separator i {
+      font-size: 150%; }
+  /* line 113, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .separator-container .line-separator:before {
+    float: left;
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 13px;
+    border: 1px solid black; }
+  /* line 121, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .separator-container .line-separator:after {
+    float: right;
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 14px;
+    border: 1px solid black; }
+
+/* line 132, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
 .cover {
   position: fixed;
   height: 100%;
@@ -84,7 +126,7 @@ body {
   opacity: 0.4;
   z-index: -2; }
 
-/* line 97, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+/* line 143, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
 .top-wrapper {
   font-size: 14px;
   text-align: center;
@@ -92,7 +134,7 @@ body {
   height: 100vh;
   position: relative; }
 
-/* line 105, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+/* line 151, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
 .triangle-left {
   position: absolute;
   bottom: -20px;
@@ -103,7 +145,7 @@ body {
   border-width: 0 50vw 15vh 50vw;
   border-color: transparent transparent white transparent; }
 
-/* line 116, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+/* line 162, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
 .triangle-right {
   position: absolute;
   bottom: -20px;
@@ -114,7 +156,7 @@ body {
   border-width: 0 50vw 15vh 50vw;
   border-color: transparent transparent white transparent; }
 
-/* line 127, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+/* line 173, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
 .top {
   position: absolute;
   width: 100%;
@@ -124,51 +166,40 @@ body {
   z-index: 10;
   color: white;
   text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1); }
-  /* line 137, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  /* line 183, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
   .top h1 {
     font-weight: 100;
     font-family: 'Slim-Joe', sans-serif;
     font-size: 80px; }
-  /* line 143, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  /* line 189, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
   .top p {
     font-family: 'Verlag-Book', sans-serif;
     font-size: 24px; }
-  /* line 148, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-  .top .separator-container {
-    text-align: center;
-    position: relative; }
-    @media (min-width: 768px) {
-      /* line 152, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-      .top .separator-container .separator {
-        width: 20em; } }
-    /* line 157, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-    .top .separator-container .separator {
-      color: white;
-      margin: 2em auto;
-      font-size: 120%; }
-      /* line 162, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-      .top .separator-container .separator i {
-        font-size: 150%; }
-    /* line 168, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-    .top .separator-container .line-separator:before {
-      float: left;
-      display: block;
-      width: 40%;
-      content: " ";
-      margin-top: 13px;
-      border: 1px solid white; }
-    /* line 176, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-    .top .separator-container .line-separator:after {
-      float: right;
-      display: block;
-      width: 40%;
-      content: " ";
-      margin-top: 14px;
-      border: 1px solid white; }
+  /* line 194, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .top .separator {
+    color: white; }
+  /* line 199, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .top .line-separator:before {
+    border-color: white; }
+  /* line 203, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .top .line-separator:after {
+    border-color: white; }
 
-/* line 188, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
-.section {
-  min-height: 300px;
+/* line 209, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+.section-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
   background-color: white; }
+  /* line 216, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+  .section-wrapper .section {
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%; }
+    /* line 221, /Users/Jackson/IdeaProjects/lochen-host/compass/sass/lochenhost.scss */
+    .section-wrapper .section h3 {
+      text-align: center;
+      font-size: 32px; }
 
 /*# sourceMappingURL=lochenhost.css.map */
